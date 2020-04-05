@@ -257,6 +257,8 @@ namespace v2rayN.Handler
 
         private int GetFreePort()
         {
+            return 10513;
+#if false
             int defaultPort = 28123;
             try
             {
@@ -273,6 +275,7 @@ namespace v2rayN.Handler
                 Utils.SaveLog(ex.Message, ex);
                 return defaultPort;
             }
+#endif
         }
     }
 }

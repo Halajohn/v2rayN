@@ -87,7 +87,11 @@ namespace v2rayN
         /// <summary>
         /// 代理 tag值
         /// </summary>
+#if true
+        public const string agentTag = "socks";
+#else
         public const string agentTag = "proxy";
+#endif
 
         /// <summary>
         /// 直连 tag值
