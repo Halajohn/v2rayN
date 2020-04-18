@@ -169,7 +169,7 @@ namespace v2rayN.Mode
         {
             get; set;
         }
-         
+
 
         /// <summary>
         /// 自定义远程DNS
@@ -205,7 +205,7 @@ namespace v2rayN.Mode
         public List<string> userPacRule
         {
             get; set;
-        }      
+        }
 
         #region 函数
 
@@ -704,10 +704,16 @@ namespace v2rayN.Mode
     [Serializable]
     public class UIItem
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        public int mainQRCodeWidth { get; set; } = 600;
+         
 
+        public System.Drawing.Size mainSize
+        {
+            get; set;
+        }
+
+        public Dictionary<string, int> mainLvColWidth
+        {
+            get; set;
+        }
     }
 }
